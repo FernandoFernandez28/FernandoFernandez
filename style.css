@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191923; /* Dark background from your CSS */
+}
+
+/* The nav bar from your CSS */
+.nav {
+  height: 50px;
+  background: red;
+}
+
+/* Centered title section taking full screen height */
+.title-section {
+  height: 100vh;
+  background: linear-gradient(rgba(10, 112, 22, 0.6), rgba(0, 0, 0, 0.8));
+  display: grid;
+  justify-content: center;
+  align-content: center; /* Use align-content for grid layouts */
+  text-align: center;
+}
+
+.title-section h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw; /* Responsive font size */
+  line-height: 1.125;
+  padding: 10px;
+  color: rgb(12, 163, 67)
+}
+
+/* Menu bar styling */
+.menu {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(10, 112, 22, 0.6));
+  padding: 50px;
+  font-size: 3vw;
+}
+
+.menu a {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #191923; /* Added color for visibility */
+  text-decoration: none;
+}
+
+.crt {
+  background: 
+  linear-gradient(to top, #000000, #000000, #333333, #0f0c34);
+  background-size: cover;
+  background-size: 100% 5px;
+}
+
+@media screen{
+  .crt {
+    animation: scanlines infinite 55s linear ;
+  }
+} 
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 350px;
+  }
+}
