@@ -16,9 +16,15 @@
     
         </header> -->
         <main>
-            <div class="title-section">
-                <h1>FERNANDO MIGUEL</h1>
-                <h1>FERNANDEZ ARIAS</h1>
+            <div class="header">
+                <div class="title-section">
+                    <h1 class="main">FERNANDO</h1>
+                    <h3 class="surname">FERNANDEZ</h3>
+                    <h3 class="surname">ARIAS</h3>
+                    <div class="scroll-indicator">
+                        <span class="idle-text">scroll</span>
+                    </div>
+                </div>
             </div>
             <div class="menu">
                 <a href="#">About me</a>
@@ -26,5 +32,18 @@
             </div>
         </main>
     </div>
+
+    <script>
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
+        });
+    </script>
+
 </body>
 </html>

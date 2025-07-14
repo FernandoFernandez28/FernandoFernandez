@@ -24,14 +24,44 @@ body {
   text-align: center;
 }
 
-.title-section h1 {
+.title-section {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
   font-size: 5vw; /* Responsive font size */
   line-height: 1.125;
   padding: 10px;
-  color: rgb(12, 163, 67)
+}
+
+.title-section .surname {
+  color: rgb(251, 255, 0)
+}
+
+.title-section .main{
+  color: rgb(251, 255, 0)
+}
+
+.scroll-indicator{
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: fixed;
+  color: rgba(228, 228, 228, 0.568);
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.5vw;
+
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+}
+
+.idle-text {
+  display: inline-block;
+  animation: idle-hover 2s infinite ease-in-out;
 }
 
 /* Menu bar styling */
@@ -62,7 +92,7 @@ body {
 
 @media screen{
   .crt {
-    animation: scanlines infinite 55s linear ;
+    animation: scanlines infinite 20s linear ;
   }
 } 
 @keyframes scanlines {
@@ -71,5 +101,21 @@ body {
   }
   to {
     background-position: 0 350px;
+  }
+}
+
+@keyframes idle-hover {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
   }
 }
