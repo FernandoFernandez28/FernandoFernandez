@@ -1,0 +1,25 @@
+.container {
+    background-color: rgb(12, 12, 12);
+    border-radius: 80px;
+    height: 8em;
+    display: flex;
+    margin: 20px;
+    overflow: hidden;
+    border: 3px solid rgb(210, 89, 13)
+    
+}
+
+.group {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 80px; */
+}
+
+.card {
+    height: 6em;
+    min-width: 6em;
+    align-content: center;
+    position: relative;
+}

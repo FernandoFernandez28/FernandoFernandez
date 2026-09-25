@@ -1,6 +1,32 @@
-h1 {
-    font-size: 150px;
-    color: #ff0000; 
-    line-height: 130px;
+.nameDesc {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    padding: 30px;
+    margin: 10px;
+}
+
+.nameDesc h1 {
+    font-size: 120px;
+    color:  white;
+    line-height: 120px;
+    text-align: left;
+    margin-block-start: 0.2rem;
+    margin-block-end: 0.2rem;
+}
+
+.nameDescItem {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(194, 194, 194);
+    width: 70%;
+    text-align:justify ;
+}
+
+@media (max-width: 600px) {
+    .nameDesc h1 {
+        font-size: 90px;
+        line-height: 70px;
+    }
 }
