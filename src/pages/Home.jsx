@@ -8,9 +8,8 @@ import { Cards } from "../components/Cards/Cards";
 export function Home(){
     return (
     <div className="App">
-      <header className="App-header"> <div>
-          {/* <Image overrideSrc={getProfiles()[1].path} style={{width: '100%', borderRadius: '20px'}}/> */}
-        </div>
+      <header className="App-header"> 
+
         <div className={styles.nameDesc}>
             <h1>
             FERNANDO <br/> FERNANDEZ
@@ -19,6 +18,10 @@ export function Home(){
                 I design and build platforms, and believe in bridging art and technology (NO GENERATIVE AI) for accessibility and scalibility from front to end.
             </p>
         </div>
+
+                {/* <div>
+          <Image overrideSrc={getProfiles()[1].path} style={{width: '100%', borderRadius: '20px'}}/>
+        </div> */}
        
         {/* <Link to='/aboutme'>About Me</Link> */}
       </header>
