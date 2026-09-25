@@ -1,0 +1,39 @@
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3,  minmax(450px, 550px));
+    grid-gap: 2rem;
+    margin-block: 2.5rem;
+    padding: 0 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    height: 450px;
+    width: 550px;
+    text-align: left;
+    position: relative;
+    color: white;
+    transition: transform .2s ease;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+.imageStyle {
+    height: 350px;
+    width: 550px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cardContent {
+    padding: 5px;
+    line-height: 15px;
+    text-overflow: ellipsis;
+}
+
+.cardContent p {
+    color: rgb(156, 156, 156);
+}
