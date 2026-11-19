@@ -2,47 +2,47 @@ const logos = [
     {
         id: crypto.randomUUID(),
         title: 'Ai',
-        path: '/images/logos/adobe-illustrator.svg',
+        path: 'images/logos/adobe-illustrator.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'C-Sharp',
-        path: '/images/logos/c_sharp.svg',
+        path: 'images/logos/c_sharp.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'Figma',
-        path: '/images/logos/figma.svg',
+        path: 'images/logos/figma.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'Javascript',
-        path: '/images/logos/javascript.svg',
+        path: 'images/logos/javascript.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'Phaser',
-        path: '/images/logos/phaser-seeklogo.png',
+        path: 'images/logos/phaser-seeklogo.png',
     },
     {
         id: crypto.randomUUID(),
         title: 'Python',
-        path: '/images/logos/python.svg',
+        path: 'images/logos/python.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'React',
-        path: '/images/logos/react.svg',
+        path: 'images/logos/react.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'Typescript',
-        path: '/images/logos/typescript.svg',
+        path: 'images/logos/typescript.svg',
     },
     {
         id: crypto.randomUUID(),
         title: 'Unity',
-        path: '/images/logos/white-unity.png',
+        path: 'images/logos/white-unity.png',
     },
 ]
 
